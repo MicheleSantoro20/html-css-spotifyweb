@@ -22,8 +22,7 @@
 }
 
 .debug .content-nav {
-    background-color: brown;
-    height: 50px;
+    background-color: brown;1
 }
 
 .debug .playlist-container {
@@ -46,6 +45,19 @@
     border: 1px dashed purple;
 }
 
+.debug .logo {
+    background-color: darkgoldenrod;
+    height: 50px;
+}
+
+.debug .nav-explorer {
+    background-color: darkolivegreen;
+}
+
+.debug .playlist-main ul {
+    background-color: beige;
+}
+
 
 
 /*Utility*/
@@ -56,6 +68,10 @@
 
 .wrap {
     flex-wrap: wrap;
+}
+
+.direction-column {
+    flex-direction: column;
 }
 
 .overflow-scroll {
@@ -69,6 +85,33 @@
 
 /* CSS Main Rules*/
 
+
+/*Sidebar*/
+
+.sidebar {
+    min-height: 300px;
+    overflow: hidden;
+}
+
+
+.lower-buttons {
+    height: 100px;
+}
+
+.upper-buttons {
+    height: calc(100% - 100px);
+}
+
+.playlist-main {
+    overflow-y: hidden;
+}
+
+.upper-button {
+    overflow-y: hidden;
+}
+
+
+/*Fine Sidebar*/
 .cta {
     width: calc(100% - 50px);
     position: fixed;
@@ -84,7 +127,7 @@ footer {
 
 main {
     height: calc(100VH - 100px);
-    
+    overflow-y: hidden;
 }
 
 aside {
@@ -116,10 +159,29 @@ aside {
     position: relative;
 }
 
+
 .aside-lower-section {
     position: absolute;
-    bottom:0
+    bottom:0;
+    max-height: 50%;
 }
+
+.content-nav {
+}
+
+.content-nav ul.d-flex {
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    
+}
+
+.content-nav ul.d-flex li {
+    display: inline-block;
+    margin: 10px;
+}
+
 
 
 /* Responsive Zone*/
@@ -143,6 +205,11 @@ aside {
     .playlist-wrapper {
         width: calc(100% / 4);
     }
+
+    .aside-lower-section {
+        max-height: 50%;
+    }
+    
 }
 
 @media screen and (min-width:768 ) {
