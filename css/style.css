@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+/*Scrollbar*/
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+
+/*Debug*/
+
 
 .debug main {
     background-color: black;
@@ -13,9 +30,7 @@
     background-color: grey;
 }
 
-.debug .sidebar {
-    background-color: yellow;
-}
+
 
 .debug .main-content {
     background-color: rgb(43, 226, 89);
@@ -38,6 +53,8 @@
     background-color: red;
 }
 
+/*
+
 .debug .upper-buttons {
     border: 1px dashed purple;
 }
@@ -45,9 +62,10 @@
     border: 1px dashed purple;
 }
 
+
+
 .debug .logo {
     background-color: darkgoldenrod;
-    height: 50px;
 }
 
 .debug .nav-explorer {
@@ -58,6 +76,11 @@
     background-color: beige;
 }
 
+.debug .sidebar {
+    background-color: rgb(0, 162, 255);
+}
+
+*/
 
 
 /*Utility*/
@@ -78,9 +101,7 @@
     overflow-y: scroll;
 }
 
-.aside-containers {
-    height: 50%;
-}
+
 
 
 /* CSS Main Rules*/
@@ -110,15 +131,117 @@
     overflow-y: hidden;
 }
 
+.logo a img {
+    width: 80%;
+    padding: 10px;
+}
+
+.nav-explorer ul li a  {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.nav-explorer ul li a img {
+    height: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.nav-explorer ul li a span {
+    vertical-align: middle;
+    color: gray;
+    font-weight: bold;
+}
+
+.add-playlist {
+    text-decoration: none;
+    color: grey;
+    margin: 10px 10px;
+
+}
+
+#add-playlist-button {
+    padding: 5px 10px;
+    background-color: #a3a3a3;
+    color: black;
+}
+
+.playlists li a{
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.playlists li {
+    margin: 10px 10px;
+}
+
+.app-install a {
+    margin-left: 10px;
+    color: gray;
+    text-decoration: none;
+}
+
+.lower-buttons-hr {
+    height: 2px;
+    width: 90%;
+    margin: 15px 10px ;
+    background-color: gray;
+}
+
+.profile-section a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.profile {
+    border-radius: 50%;
+    background-color: gray;
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+    margin: 0px 10px;
+    vertical-align: middle;
+}
+
+.profile-name {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.playlist-main h3 {
+    font-size: 15px;
+    margin: 10px;
+}
 
 /*Fine Sidebar*/
+
+/*Main content*/
+
 .cta {
     width: calc(100% - 50px);
     position: fixed;
     top: 0px;
     left: 50px;
     height: 80px;
-    background-color: rgba(255, 150, 150, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cta-content {
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+    padding: 10px 30px;
+    text-align: right;
+    border: 1px solid white;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    border-radius: 30px;
 }
 
 footer {
@@ -134,7 +257,11 @@ aside {
     width: 50px;
 }
 
+section h2 {
+    color: white;
+    margin: 25px 10px 20px 10px;
 
+}
 .main-content {
     width: calc(100% - 50px);
     overflow: scroll;
@@ -155,18 +282,12 @@ aside {
     height: 100%;
 }
 
+.playlist img{
+    width: 100%;
+}
+
 .lower-buttons {
     position: relative;
-}
-
-
-.aside-lower-section {
-    position: absolute;
-    bottom:0;
-    max-height: 50%;
-}
-
-.content-nav {
 }
 
 .content-nav ul.d-flex {
@@ -182,6 +303,17 @@ aside {
     margin: 10px;
 }
 
+.content-nav ul.d-flex li a {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.playlist-main h3{
+    color: white;
+    font-weight: bold;
+    margin-left: 10px
+}
 
 
 /* Responsive Zone*/

@@ -7,6 +7,8 @@
     <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body class="debug">
@@ -18,34 +20,53 @@
                 <div class="upper-buttons d-flex direction-column aside-containers">
                     <div class="logo">
 
-                        <img src="" alt="">
+                        <a href="#"> <img src="img/logo.svg" alt="logo spotify"></a>
 
                     </div>
                     <div class="nav-explorer">
                         <ul>
-                            <li>link 1</li>
-                            <li>link 2</li>
-                            <li>link 3</li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/home.svg" alt="">
+                                    <span>Home</span>
+                                </a>
+
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="img/search.svg" alt="">
+                                    <span>Cerca</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="img/libreria.svg" alt="">
+                                    <span>La tua libreria</span>
+                                </a>
+                            </li>
 
                         </ul>
                     </div>
                     <div class="playlist-main d-flex direction-column">
 
-                        <h3>playlist</h3>
-                        <a href="#" class="add-playlist">+ add playlist</a>
+                        <h3>PLAYLIST</h3>
 
-                        <ul class="overflow-scroll">
-                            <li>playlist 1</li>
-                            <li>playlist 2</li>
-                            <li>playlist 3</li>
-                            <li>playlist 4</li>
-                            <li>playlist 5</li>
-                            <li>playlist 6</li>
-                            <li>playlist 7</li>
-                            <li>playlist 8</li>
-                            <li>playlist 9</li>
-                            <li>playlist 10</li>
-                            <li>playlist 11</li>
+                        <a href="#" class="add-playlist">
+                            <span id="add-playlist-button"><i class="fa-solid fa-plus"></i></span> 
+                            Crea Playlist
+                        </a>
+
+                        <ul class="playlists overflow-scroll">
+                            <li><a href=""> Nome Playlist</a></li>
+                            <li><a href=""> Nome Playlist</a></li>
+                            <li><a href=""> Nome Playlist</a></li>
+                            <li><a href=""> Nome Playlist</a></li>
+                            <li><a href=""> Nome Playlist</a></li>
+                            <li><a href=""> Nome Playlist</a></li>
+                            <li><a href=""> Nome Playlist</a></li>
+                            
 
 
                         </ul>
@@ -55,8 +76,21 @@
 
                 <div class="lower-buttons aside-containers">
                     <div class="aside-lower-section">
-                        <div class="app-install"> Installa app</div>
-                        <div>rrefref</div>
+
+                        <div class="app-install"> 
+                            <a href=""><i class="fa-regular fa-circle-down"></i> Installa app</a>
+                        </div>
+
+                        <div class="lower-buttons-hr"></div>
+
+                        <div class="profile-section">
+                            <a href="">
+                                <img class="profile" src="img/profile.svg" alt="Profile-logo">
+                                <span class="profile-name">John Doe</span>
+                            </a>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -67,16 +101,20 @@
 
         <div class="main-content">
 
-            <div class="cta">EFFETTUA L'UPGRADE</div>
+            <div class="cta">
+
+                <a href=""><div class="cta-content"> EFFETTUA L'UPGRADE</div></a>
+                
+            </div>
 
             <nav class="content-nav">
                 <ul class="d-flex wrap">
-                    <li>IN EVIDENZA</li>
-                    <li>PODCAST</li>
-                    <li>CLASSIFICHE</li>
-                    <li>GENERI E MOOD</li>
-                    <li>NUOVE USCITE</li>
-                    <li>SCOPRI</li>
+                    <li><a href="">IN EVIDENZA</a></li>
+                    <li><a href="">PODCAST</a></li>
+                    <li><a href="">CLASSIFICHE</a></li>
+                    <li><a href="">GENERI E MOOD</a></li>
+                    <li><a href="">NUOVE USCITE</a></li>
+                    <li><a href="">SCOPRI</a></li>
                 </ul>
             </nav>
 
@@ -89,27 +127,40 @@
                 <ul class="playlist-container d-flex wrap">
 
                     <li class="playlist-wrapper">
-                        <div class="playlist">album riprodotto</div>
+                        <div class="playlist">
+                            <img src="img/metal_lifting.jpg" alt="">
+                        </div>
                     </li>
 
                     <li class="playlist-wrapper">
-                        <div class="playlist">album riprodotto</div>
+                        <div class="playlist">
+                            <img src="/img/stranger.jpeg" alt="">
+                        </div>
                     </li>
 
                     <li class="playlist-wrapper">
-                        <div class="playlist">album riprodotto</div>
+                        <div class="playlist">
+                            album riprodotto
+                        </div>
                     </li>
 
                     <li class="playlist-wrapper">
-                        <div class="playlist">album riprodotto</div>
+                        <div class="playlist">
+                            album riprodotto
+                        </div>
                     </li>
 
                     <li class="playlist-wrapper">
-                        <div class="playlist">album riprodotto</div>
+                        <div class="playlist">
+                            album riprodotto
+                        </div>
                     </li>
 
                     <li class="playlist-wrapper">
-                        <div class="playlist">album riprodotto</div>
+                        <div class="playlist">
+                            album riprodotto
+                            
+                        </div>
                     </li>
 
                 </ul>
@@ -120,11 +171,15 @@
                 <ul class="playlist-container d-flex wrap">
 
                     <li class="playlist-wrapper">
-                        <div class="playlist">album riprodotto</div>
+                        <div class="playlist">
+                            album riprodotto
+                        </div>
                     </li>
 
                     <li class="playlist-wrapper">
-                        <div class="playlist">album riprodotto</div>
+                        <div class="playlist">
+                            album riprodotto
+                        </div>
                     </li>
 
 
@@ -136,11 +191,15 @@
                 <ul class="playlist-container d-flex wrap">
 
                     <li class="playlist-wrapper">
-                        <div class="playlist">album riprodotto</div>
+                        <div class="playlist">
+                            album riprodotto
+                        </div>
                     </li>
 
                     <li class="playlist-wrapper">
-                        <div class="playlist">album riprodotto</div>
+                        <div class="playlist">
+                            album riprodotto
+                        </div>
                     </li>
 
 
