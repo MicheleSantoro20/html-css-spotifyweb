@@ -26,16 +26,11 @@ html {
     background-color: black;
 }
 
-.debug footer {
-    background-color: grey;
-}
 
-
-
+/*
 .debug .main-content {
     background-color: rgb(43, 226, 89);
 }
-
 .debug .content-nav {
     background-color: brown;1
 }
@@ -48,10 +43,13 @@ html {
     background-color: aqua;
     height: 150px;
 }
-
 .debug .playlist {
     background-color: red;
 }
+*/
+
+
+
 
 /*
 
@@ -101,6 +99,21 @@ html {
     overflow-y: scroll;
 }
 
+.dp-block {
+    display: block;
+}
+
+.dp-inline-block {
+    display: inline-block;
+}
+
+.dp-inline {
+    display: inline;
+}
+
+.dp-none {
+    display: none;
+}
 
 
 
@@ -125,15 +138,24 @@ html {
 
 .playlist-main {
     overflow-y: hidden;
+    display: none;
 }
 
 .upper-button {
     overflow-y: hidden;
 }
 
-.logo a img {
+
+.small-img img{
+    height: 30px;
+    margin-left :10px;
+    margin-top: 10px;
+}
+
+.logo .big-img img {
     width: 80%;
     padding: 10px;
+    display: none;
 }
 
 .nav-explorer ul li a  {
@@ -152,6 +174,7 @@ html {
     vertical-align: middle;
     color: gray;
     font-weight: bold;
+    display: none;
 }
 
 .add-playlist {
@@ -178,16 +201,27 @@ html {
 }
 
 .app-install a {
-    margin-left: 10px;
+    margin-left: 15px;
     color: gray;
     text-decoration: none;
 }
+
+.app-install {
+    margin-bottom: 10px;
+}
+
+.app-install a span {
+    display: none;
+}
+
+
 
 .lower-buttons-hr {
     height: 2px;
     width: 90%;
     margin: 15px 10px ;
     background-color: gray;
+    display: none;
 }
 
 .profile-section a {
@@ -201,7 +235,7 @@ html {
     object-fit: cover;
     width: 35px;
     height: 35px;
-    margin: 0px 10px;
+    margin: 0px 5px;
     vertical-align: middle;
 }
 
@@ -211,6 +245,7 @@ html {
     font-weight: bolder;
     vertical-align: middle;
     text-decoration: none;
+    display: none;
 }
 
 .playlist-main h3 {
@@ -228,7 +263,7 @@ html {
     top: 0px;
     left: 50px;
     height: 80px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .cta-content {
@@ -246,6 +281,8 @@ html {
 
 footer {
     height: 100px;
+    background-color: #272727
+    ;
 }
 
 main {
@@ -265,6 +302,7 @@ section h2 {
 .main-content {
     width: calc(100% - 50px);
     overflow: scroll;
+    background-color:  #131821;
 }
 
 .content-nav {
@@ -315,10 +353,32 @@ section h2 {
     margin-left: 10px
 }
 
+.created-for-subtitle {
+    margin: 10px;
+    color: gray;
+}
+
+ul li .playlist h3 {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+ul li .playlist h4 {
+    color: gray;
+    text-align: center;
+    padding-top: 5px;
+}
+
 
 /* Responsive Zone*/
 
 @media screen and (min-width:576px ) {
+
+    .small-img {
+        display: none;
+    }
 
     .sidebar {
         width: 200px;
@@ -342,6 +402,32 @@ section h2 {
         max-height: 50%;
     }
     
+    .playlist-main {
+        display: block;
+    }
+    
+    .logo .big-img img {
+        display: inline-block;
+    }
+    
+    .nav-explorer ul li a span {
+        display: inline;
+    }
+    
+    .app-install a span {
+        display: inline;
+    }
+    
+    .lower-buttons-hr {
+        display: block;
+    }
+   
+    .profile-name {
+        display: inline;
+    }
+
+
+
 }
 
 @media screen and (min-width:768 ) {
