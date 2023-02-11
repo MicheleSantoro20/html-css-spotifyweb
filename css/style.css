@@ -422,6 +422,10 @@ ul li .playlist h4 {
     gap: 20px;
 }
 
+.player-control-buttons i, .control-elapsed, .control-total, .album-icons i, .sx-footer  {
+    color: white;
+}
+
 .control-elapsed, .control-total {
     width: 10%;
     text-align: center;
@@ -435,8 +439,6 @@ ul li .playlist h4 {
     
 }
 
-
-
 .progress-bar {
     width: 20%;
     height: 100%;
@@ -444,6 +446,13 @@ ul li .playlist h4 {
     border-radius: 5px;
 }
 
+.right-footer i {
+    padding: 5px;
+    color: white;
+}
+
+.right-footer .bar {
+    width: 70%;
 
 
 /* Responsive Zone*/
