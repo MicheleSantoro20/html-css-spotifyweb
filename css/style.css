@@ -80,11 +80,32 @@ html {
 
 */
 
+.debug .sx-footer {
+    background-color: red;
+    height: 100%;
+    width: 20%;
+}
+
+.debug .middle-footer {
+    background-color: yellow;
+    
+    width: 40%;
+}
+
+.debug .right-footer {
+    background-color: blue;
+    width: 20%;
+}
+
 
 /*Utility*/
 
 .d-flex {
     display: flex;
+}
+
+.align-center  {
+    align-items: center;
 }
 
 .wrap {
@@ -115,7 +136,20 @@ html {
     display: none;
 }
 
+.justify-center {
+    justify-content: center;
+}
 
+.player-control-buttons {
+    height: 60%;
+}
+
+.player-control-buttons i {
+    margin: 10px;
+    font-size: 25px;
+}
+
+#
 
 /* CSS Main Rules*/
 
@@ -370,6 +404,46 @@ ul li .playlist h4 {
     text-align: center;
     padding-top: 5px;
 }
+
+.footer-container {
+    justify-content: space-between;
+}
+
+.footer-img {
+    height: 100px;
+    width: 50px;
+}
+.footer-img img {
+    width: 100%;
+}
+
+.player-control-time {
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.control-elapsed, .control-total {
+    width: 10%;
+    text-align: center;
+}
+
+.bar {
+    width: 80%;
+    height: 10px;
+    background-color: black;
+    border-radius: 5px;
+    
+}
+
+
+
+.progress-bar {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(145, 143, 143);
+    border-radius: 5px;
+}
+
 
 
 /* Responsive Zone*/
