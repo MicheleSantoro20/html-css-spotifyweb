@@ -78,17 +78,15 @@ html {
     background-color: rgb(0, 162, 255);
 }
 
-*/
+
 
 .debug .sx-footer {
     background-color: red;
     height: 100%;
-    width: 20%;
 }
 
 .debug .middle-footer {
-    background-color: yellow;
-    
+    background-color: green;
     width: 40%;
 }
 
@@ -97,6 +95,7 @@ html {
     width: 20%;
 }
 
+*/
 
 /*Utility*/
 
@@ -171,12 +170,12 @@ html {
 }
 
 .playlist-main {
-    overflow-y: hidden;
+    overflow: hidden;
     display: none;
 }
 
 .upper-button {
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 
@@ -287,6 +286,8 @@ html {
     margin: 10px;
 }
 
+
+
 /*Fine Sidebar*/
 
 /*Main content*/
@@ -352,6 +353,30 @@ section h2 {
 .playlist {
     width: 100%;
     height: 100%;
+    position: relative;
+}
+
+.img-container {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    z-index: 3;
+
+}
+.effect {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    display: none;
 }
 
 .playlist img{
@@ -369,6 +394,7 @@ section h2 {
     margin: auto;
     
 }
+
 
 .content-nav ul.d-flex li {
     display: inline-block;
@@ -407,19 +433,40 @@ ul li .playlist h4 {
 
 .footer-container {
     justify-content: space-between;
+    height: 100%;
+    min-width: 460px;
+    overflow-x: scroll;
 }
 
-.footer-img {
-    height: 100px;
-    width: 50px;
+.sx-footer img {
+    height: 50x;
+    width: 40px;
+    margin: 0px 0px 0px 2px;
 }
+
+.song-name {
+    margin: 0px 15px 0px 5px;
+}
+
+.song-name h3 {
+    font-size: 10px;
+}
+
+.song-name h2 {
+    font-size: 15px;
+}
+
 .footer-img img {
-    width: 100%;
+    width: 80%;
 }
 
 .player-control-time {
     justify-content: space-between;
     gap: 20px;
+}
+
+.player-control-buttons i{
+    font-size: 20px;
 }
 
 .player-control-buttons i, .control-elapsed, .control-total, .album-icons i, .sx-footer  {
@@ -446,6 +493,11 @@ ul li .playlist h4 {
     border-radius: 5px;
 }
 
+.middle-footer {
+    margin: auto;
+    width: 40%;
+}
+
 .right-footer i {
     padding: 5px;
     color: white;
@@ -453,6 +505,29 @@ ul li .playlist h4 {
 
 .right-footer .bar {
     width: 70%;
+
+}
+
+.sx-footer {
+    width: 15%;
+}
+
+.right-footer {
+    justify-content: flex-end;
+}
+
+.right-footer .bar {
+    width: 60%;
+}
+
+#dx-footer {
+    width: 15%;
+}
+
+.playlist-wrapper:hover  .effect{
+    display: inline-block;
+}
+
 
 
 /* Responsive Zone*/
@@ -509,7 +584,9 @@ ul li .playlist h4 {
         display: inline;
     }
 
-
+    br {
+        display: none;
+    }
 
 }
 
